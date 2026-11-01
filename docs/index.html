@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101c2f">
+  <meta name="description" content="Code Reasoning Teacher：把代码解释成可以自己复现的思路。面向编程初学者、蓝桥杯与算法竞赛学习者，以及准备技术面试的求职者。">
+  <title>Code Reasoning Teacher · 从看懂代码，到自己写出来</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="主导航">
+      <a class="brand" href="#top" aria-label="Code Reasoning Teacher 首页"><span class="brand-mark">{<b>:</b>}</span><span>CODE<span class="brand-light">/</span>REASON</span></a>
+      <div class="nav-links">
+        <a href="#method">学习方法</a><a href="#scenes">适用场景</a><a href="#install">安装使用</a>
+      </div>
+      <a class="nav-cta" data-repo-link href="#install">在 GitHub 查看 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-grid shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="pulse"></span> 一个教你思考过程的 Codex Skill</div>
+          <h1>看懂代码之后，<br><em>下次自己写出来。</em></h1>
+          <p class="hero-lead">刷题看过答案，却想不到第一步？函数知道名字，却不会自己用？Code Reasoning Teacher 从题目需求讲到设计取舍、运行路径和语法细节，让“我懂了”变成“我会写”。</p>
+          <div class="hero-actions"><a class="button button-primary" href="#install">开始使用 <span aria-hidden="true">↗</span></a><a class="button button-ghost" href="#scenes">看看它怎么讲 <span aria-hidden="true">↓</span></a></div>
+          <div class="hero-note"><span>适合</span><strong>编程入门</strong><i></i><strong>蓝桥杯 / 算法竞赛</strong><i></i><strong>技术面试准备</strong></div>
+        </div>
+        <div class="hero-visual" aria-label="从问题到自己复现的学习流程示意">
+          <div class="visual-top"><span class="traffic"><i></i><i></i><i></i></span><span>learning-path.md</span><span class="visual-code">01 / 05</span></div>
+          <div class="visual-body">
+            <div class="visual-question"><span class="tag">你的疑问</span><p>“我看懂了二分查找的代码，<br>可为什么总是自己写不出来？”</p></div>
+            <div class="flow-line"></div>
+            <div class="flow-step"><span class="step-number">01</span><div><b>先想问题</b><small>要找什么？已知条件是什么？</small></div><span class="step-arrow">↗</span></div>
+            <div class="flow-step"><span class="step-number">02</span><div><b>再设计办法</b><small>为什么可以排除一半范围？</small></div><span class="step-arrow">↗</span></div>
+            <div class="flow-step active"><span class="step-number">03</span><div><b>最后写代码</b><small>边界、循环与返回值怎样对应？</small></div><span class="step-arrow">↗</span></div>
+            <div class="visual-result"><span class="result-icon">✓</span><span>目标：脱离答案，独立复现</span></div>
+          </div>
+          <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        </div>
+      </div>
+      <div class="hero-bottom shell"><span>把“代码解释”升级为“编程思路训练”</span><span>向下探索 <b>↓</b></span></div>
+    </section>
+
+    <section class="problem section shell" id="why">
+      <div class="section-heading"><span class="section-index">01 / 学习困境</span><h2>你缺的可能不是答案，<br><span>而是从题目走到代码的那座桥。</span></h2><p>很多讲解告诉你“这行做了什么”，却跳过了决定先写哪一行、为什么这样写的过程。</p></div>
+      <div class="problem-grid">
+        <article class="problem-card"><span class="card-symbol">01<span>↗</span></span><h3>看过答案，还是不会做</h3><p>知道循环和判断分别是什么，却不知道拿到题目后先定义什么、先检查什么。</p></article>
+        <article class="problem-card"><span class="card-symbol">02<span>↗</span></span><h3>语法认识，用时不会</h3><p>能说出函数名称，却不清楚参数、返回值、异常和它在这里出现的理由。</p></article>
+        <article class="problem-card"><span class="card-symbol">03<span>↗</span></span><h3>换一道题，思路就断了</h3><p>记住了一份代码，却没抓住可以迁移到新题目、新项目和面试中的思考方法。</p></article>
+      </div>
+    </section>
+
+    <section class="method section" id="method">
+      <div class="shell method-layout"><div class="method-intro"><span class="section-index">02 / 学习方法</span><h2>不止解释代码，<br><span>还原代码诞生的过程。</span></h2><p>这个 Skill 让 Codex 按学习者能跟上的顺序讲解。先建立问题模型，再看选择如何落成每一行代码。</p><a class="text-link" href="#scenes">看三种学习场景 <span>↗</span></a></div>
+      <div class="method-steps">
+        <div class="method-step"><span>01</span><div><h3>把题目翻译成需求</h3><p>输入是什么？要得到什么？哪些规则不能被违反？</p></div></div>
+        <div class="method-step"><span>02</span><div><h3>重建人的设计思路</h3><p>如果从空文件开始，会先定义什么，再做哪些检查和选择？</p></div></div>
+        <div class="method-step"><span>03</span><div><h3>追踪真实执行</h3><p>代入具体数据，观察分支怎么走、变量何时改变、结果怎样产生。</p></div></div>
+        <div class="method-step"><span>04</span><div><h3>拆透函数与语法</h3><p>讲清写法、输入、输出、错误，以及“为什么这里要这样写”。</p></div></div>
+        <div class="method-step"><span>05</span><div><h3>回到独立复现</h3><p>把讲解收束成可重写的步骤，让下一道题有路可走。</p></div></div>
+      </div></div>
+    </section>
+
+    <section class="scenes section shell" id="scenes">
+      <div class="section-heading"><span class="section-index">03 / 适用场景</span><h2>从第一行代码，<br><span>到赛场和面试现场。</span></h2><p>选择你现在的目标，看看它会把注意力放在哪里。以下是示意讲解，不是对真实题目的完整解答。</p></div>
+      <div class="scene-tabs" role="tablist" aria-label="学习场景"><button class="scene-tab" role="tab" id="tab-beginner" aria-controls="scene-panel" aria-selected="true" data-scene="beginner">编程初学者 <span>01</span></button><button class="scene-tab" role="tab" id="tab-contest" aria-controls="scene-panel" aria-selected="false" data-scene="contest" tabindex="-1">蓝桥杯 / 算法竞赛 <span>02</span></button><button class="scene-tab" role="tab" id="tab-interview" aria-controls="scene-panel" aria-selected="false" data-scene="interview" tabindex="-1">技术面试求职者 <span>03</span></button></div>
+      <div class="scene-panel" id="scene-panel" role="tabpanel" aria-labelledby="tab-beginner">
+        <div class="scene-copy"><span class="scene-label" id="scene-label">编程初学者 · Python 基础</span><h3 id="scene-title">不是只告诉你 <code>float(input())</code> 是什么。</h3><p id="scene-description">先问“为什么输入的金额不能直接拿来相减”，再拆开输入、类型转换与异常，最后让你自己写出检查逻辑。</p><div class="scene-question"><span>你可以这样问</span><p id="scene-prompt">“请从设计转账程序的思路开始，解释这段代码为什么先检查金额，再修改余额。”</p><button id="copy-prompt" type="button" aria-label="复制示例提问">复制提问 <span aria-hidden="true">↗</span></button></div></div>
+        <div class="scene-demo"><div class="demo-bar"><span class="demo-dots"><i></i><i></i><i></i></span><span id="demo-file">transfer.py</span><span>示意片段</span></div><pre><code id="demo-code">trans = float(input())
+if trans &lt;= 0:
+    raise ValueError("金额必须大于 0")
+balance -= trans</code></pre><div class="demo-thinking"><span>不是逐行翻译，而是先问</span><p id="demo-thought">“扣钱之前，程序需要确认哪两件事？”</p></div></div>
+      </div>
+    </section>
+
+    <section class="principles section"><div class="shell principle-layout"><div><span class="section-index light">04 / 讲解原则</span><h2>把理解留给你，<br><span>把跳步留在过去。</span></h2></div><div class="principle-list"><div><span>✦</span><p><strong>从零基础出发</strong>数学和算法逐步推导，不默认你已经会复杂概念。</p></div><div><span>✦</span><p><strong>说清事实与推测</strong>代码实际做了什么，与作者可能想做什么，分开说明。</p></div><div><span>✦</span><p><strong>错误也是学习入口</strong>先指出格式、语法或逻辑问题，再解释原因和原本的设计意图。</p></div></div></div></section>
+
+    <section class="install section shell" id="install"><div class="install-intro"><span class="section-index">05 / 立即开始</span><h2>一次安装，<br><span>让每次提问都更接近“会写”。</span></h2><p>这是一份可直接放入 Codex 的 Skill 文件。不需要额外安装 Python 包，也不需要配置 API。</p><div class="install-actions"><a class="button button-dark" data-repo-link href="#install">查看 GitHub 仓库 <span aria-hidden="true">↗</span></a><a class="button button-outline" data-skill-link href="#install">查看 SKILL.md <span aria-hidden="true">↗</span></a></div></div><div class="install-card"><div class="install-card-title"><span>安装步骤</span><span>约 2 分钟</span></div><ol><li><b>下载 skill 文件夹</b><p>从仓库获取 <code>skills/code-reasoning-teacher</code>。</p></li><li><b>放进 Codex 的 skills 目录</b><p>例如 Mac 上的 <code>~/.codex/skills/</code>，保留文件夹内的 <code>SKILL.md</code>。</p></li><li><b>开始提问</b><p>输入“帮我理解这段代码”，或明确写 <code>$code-reasoning-teacher</code>。</p></li></ol></div></section>
+  </main>
+  <footer class="footer"><div class="shell footer-inner"><div><div class="brand"><span class="brand-mark">{<b>:</b>}</span><span>CODE<span class="brand-light">/</span>REASON</span></div><p>让每一次看懂，都成为下一次写出来的起点。</p></div><div class="footer-right"><a data-repo-link href="#install">GitHub ↗</a><span>Made for curious coders.</span></div></div></footer>
+</body>
+</html>
